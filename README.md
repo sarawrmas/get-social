@@ -27,10 +27,7 @@ THEN I am able to successfully create, update, and delete users and thoughts in 
 WHEN I test API POST and DELETE routes in Insomnia Core  
 THEN I am able to successfully create and delete reactions to thoughts and add and remove friends to a user’s friend list
 
-## Getting Started
-Use the following guidelines to set up your models and API routes:
-
-### Models
+<!-- ## Models
 
 **User**
 * username
@@ -92,9 +89,9 @@ Date
 Set default value to the current timestamp
 Use a getter method to format the timestamp on query
 
-* Schema Settings: This will not be a model, but rather will be used as the reaction field's subdocument schema in the Thought model.
+* Schema Settings: This will not be a model, but rather will be used as the reaction field's subdocument schema in the Thought model. -->
 
-### API Routes
+## API Routes
 
 **/api/users**
 * GET all users
@@ -133,7 +130,7 @@ BONUS: Remove a user's associated thoughts when deleted.
 * POST to create a reaction stored in a single thought's reactions array field
 * DELETE to pull and remove a reaction by the reaction's reactionId value
 
-### Walkthrough Video
+## Walkthrough Video
 Demonstrates the functionality of the social media API must be submitted, and a link to the video should be included in your README file.
 
 * The walkthrough video must show all of the technical acceptance criteria being met.
@@ -150,13 +147,13 @@ Demonstrates the functionality of the social media API must be submitted, and a 
 
 * Walkthrough video must demonstrate POST and DELETE routes for reactions to thoughts being tested in Insomnia Core.
 
-### Technical Acceptance Criteria
-* Uses the Mongoose package to connect to a MongoDB database.
+## Technical Acceptance Criteria
+<!-- * Uses the Mongoose package to connect to a MongoDB database. -->
 
-* Includes User and Thought models outlined in the Challenge instructions.
+<!-- * Includes User and Thought models outlined in the Challenge instructions. -->
 
-* Includes schema settings for User and Thought models as outlined in the Challenge instructions.
+<!-- * Includes schema settings for User and Thought models as outlined in the Challenge instructions. -->
 
-* Includes Reactions as the reaction field's subdocument schema in the Thought model.
+<!-- * Includes Reactions as the reaction field's subdocument schema in the Thought model. -->
 
 * Uses functionality to format queried timestamps properly.
