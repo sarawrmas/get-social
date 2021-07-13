@@ -108,9 +108,9 @@ Use a getter method to format the timestamp on query
 
 BONUS: Remove a user's associated thoughts when deleted.
 
-<!-- **/api/users/:userId/friends/:friendId**
+**/api/users/:userId/friends/:friendId**
 * POST to add a new friend to a user's friend list
-* DELETE to remove a friend from a user's friend list -->
+* DELETE to remove a friend from a user's friend list
 
 <!-- **/api/thoughts**
 * GET to get all thoughts
