@@ -28,7 +28,7 @@ const ThoughtController = {
     Thought.create(body)
     .then(({ _id }) => {
       return User.findOneAndUpdate(
-        { _id: params.userId },
+        { _id: body.userId },
         { $push: { thoughts: _id } },
         { new: true }
       );
@@ -69,14 +69,14 @@ const ThoughtController = {
         { _id: params.userId },
         { $pull: { thoughts: params.thoughtId } },
         { new: true }
-      );
+      )
     })
-    .then(dbThoughtData => {
-      if (!dbThoughtData) {
-        res.status(404).json({ message: 'No thought with this id' });
+    .then(dbUserData => {
+      if (!dbUserData) {
+        res.status(404).json({ message: 'No user with this id' })
         return;
       }
-      res.json(dbThoughtData);
+      res.json(dbUserData);
     })
     .catch(err => res.json(err));
   },
@@ -108,4 +108,4 @@ const ThoughtController = {
   }
 }
 
-module.exports = ThoughtController;
+module.exports = ThoughtController; 
